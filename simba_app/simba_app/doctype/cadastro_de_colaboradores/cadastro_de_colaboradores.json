@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:email",
+ "creation": "2022-08-30 14:01:56.122240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_column",
+  "nome",
+  "sobrenome",
+  "full_name",
+  "cpf",
+  "nascimento",
+  "email",
+  "senha",
+  "address_information_column",
+  "cep",
+  "logradouro",
+  "bairro",
+  "cidade",
+  "uf",
+  "n\u00famero",
+  "general_information_column",
+  "possui_filhos",
+  "nome_dos_filhos",
+  "estado_civil",
+  "finish_column",
+  "cadastrar",
+  "voltar"
+ ],
+ "fields": [
+  {
+   "fieldname": "cpf",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CPF",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "senha",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Senha",
+   "options": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nome",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nome",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "sobrenome",
+   "fieldtype": "Data",
+   "label": "Sobrenome",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cep",
+   "fieldtype": "Data",
+   "label": "CEP"
+  },
+  {
+   "fieldname": "logradouro",
+   "fieldtype": "Data",
+   "label": "Logradouro"
+  },
+  {
+   "fieldname": "bairro",
+   "fieldtype": "Data",
+   "label": "Bairro"
+  },
+  {
+   "fieldname": "cidade",
+   "fieldtype": "Data",
+   "label": "Cidade"
+  },
+  {
+   "fieldname": "uf",
+   "fieldtype": "Data",
+   "label": "UF"
+  },
+  {
+   "fieldname": "n\u00famero",
+   "fieldtype": "Data",
+   "label": "N\u00famero"
+  },
+  {
+   "default": "0",
+   "fieldname": "possui_filhos",
+   "fieldtype": "Check",
+   "label": "Possui Filhos?"
+  },
+  {
+   "fieldname": "nome_dos_filhos",
+   "fieldtype": "Small Text",
+   "label": "Nome dos Filhos"
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "Solteiro\nCasado\nVi\u00favo\nDivorciado\nUni\u00e3o Est\u00e1vel"
+  },
+  {
+   "fieldname": "cadastrar",
+   "fieldtype": "Button",
+   "label": "Cadastrar"
+  },
+  {
+   "fieldname": "voltar",
+   "fieldtype": "Button",
+   "label": "Voltar"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nascimento",
+   "fieldtype": "Date",
+   "label": "Data de Nascimento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_information_column",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "address_information_column",
+   "fieldtype": "Section Break",
+   "label": "Address Information"
+  },
+  {
+   "fieldname": "general_information_column",
+   "fieldtype": "Section Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "finish_column",
+   "fieldtype": "Section Break",
+   "label": "Finish"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Nome Completo",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-30 16:08:10.344164",
+ "modified_by": "Administrator",
+ "module": "Simba App",
+ "name": "Cadastro de Colaboradores",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

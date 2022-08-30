@@ -17,13 +17,13 @@
   "password",
   "address_information_column",
   "cep",
-  "logradouro",
-  "bairro",
-  "cidade",
+  "street",
+  "distric",
+  "city",
   "uf",
-  "n\u00famero",
+  "number",
   "general_information_column",
-  "possui_filhos",
+  "has_child",
   "nome_dos_filhos",
   "estado_civil",
   "finish_column",
@@ -47,35 +47,9 @@
    "label": "CEP"
   },
   {
-   "fieldname": "logradouro",
-   "fieldtype": "Data",
-   "label": "Logradouro"
-  },
-  {
-   "fieldname": "bairro",
-   "fieldtype": "Data",
-   "label": "Bairro"
-  },
-  {
-   "fieldname": "cidade",
-   "fieldtype": "Data",
-   "label": "Cidade"
-  },
-  {
    "fieldname": "uf",
    "fieldtype": "Data",
    "label": "UF"
-  },
-  {
-   "fieldname": "n\u00famero",
-   "fieldtype": "Data",
-   "label": "N\u00famero"
-  },
-  {
-   "default": "0",
-   "fieldname": "possui_filhos",
-   "fieldtype": "Check",
-   "label": "Possui Filhos?"
   },
   {
    "fieldname": "nome_dos_filhos",
@@ -165,11 +139,37 @@
    "fieldtype": "Date",
    "label": "Data de Nascimento",
    "reqd": 1
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Logradouro"
+  },
+  {
+   "fieldname": "distric",
+   "fieldtype": "Data",
+   "label": "Bairro"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "Cidade"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "N\u00famero"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_child",
+   "fieldtype": "Check",
+   "label": "Possui Filhos?"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 18:03:29.686270",
+ "modified": "2022-08-30 18:18:07.971461",
  "modified_by": "Administrator",
  "module": "Simba App",
  "name": "Cadastro de Colaboradores",

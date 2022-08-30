@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include simba_app *.css
+recursive-include simba_app *.csv
+recursive-include simba_app *.html
+recursive-include simba_app *.ico
+recursive-include simba_app *.js
+recursive-include simba_app *.json
+recursive-include simba_app *.md
+recursive-include simba_app *.png
+recursive-include simba_app *.py
+recursive-include simba_app *.svg
+recursive-include simba_app *.txt
+recursive-exclude simba_app *.pyc

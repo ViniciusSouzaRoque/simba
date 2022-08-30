@@ -12,9 +12,9 @@
   "last_name",
   "full_name",
   "cpf",
-  "nascimento",
+  "birth",
   "email",
-  "senha",
+  "password",
   "address_information_column",
   "cep",
   "logradouro",
@@ -33,20 +33,13 @@
  ],
  "fields": [
   {
+   "default": "000.000.000-00",
    "fieldname": "cpf",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "CPF",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "senha",
-   "fieldtype": "Password",
-   "in_list_view": 1,
-   "label": "Senha",
-   "options": "Password",
-   "reqd": 1
   },
   {
    "fieldname": "cep",
@@ -115,12 +108,6 @@
    "unique": 1
   },
   {
-   "fieldname": "nascimento",
-   "fieldtype": "Date",
-   "label": "Data de Nascimento",
-   "reqd": 1
-  },
-  {
    "fieldname": "basic_information_column",
    "fieldtype": "Section Break",
    "label": "Basic Information"
@@ -164,11 +151,25 @@
    "fieldname": "testando",
    "fieldtype": "Button",
    "label": "Testando"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Senha",
+   "options": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "birth",
+   "fieldtype": "Date",
+   "label": "Data de Nascimento",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 17:34:07.211170",
+ "modified": "2022-08-30 18:03:29.686270",
  "modified_by": "Administrator",
  "module": "Simba App",
  "name": "Cadastro de Colaboradores",

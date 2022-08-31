@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-31 10:10:03.341478",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "event_id",
+  "type",
+  "start_time",
+  "end_time",
+  "warned_peers",
+  "warned_team",
+  "warned_leader",
+  "substitute",
+  "pending_task",
+  "document",
+  "created_at",
+  "voltar",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_id",
+   "fieldtype": "Date",
+   "label": "Data"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "Meio day-off\nDay-off\nDispensa"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Horario Inicial"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "Horario Final"
+  },
+  {
+   "default": "0",
+   "fieldname": "warned_peers",
+   "fieldtype": "Check",
+   "label": "Comunicou seus pares sobre sua aus\u00eancia?"
+  },
+  {
+   "default": "0",
+   "fieldname": "warned_team",
+   "fieldtype": "Check",
+   "label": "Comunicou seus liderados sobre sua aus\u00eancia?"
+  },
+  {
+   "default": "0",
+   "fieldname": "warned_leader",
+   "fieldtype": "Check",
+   "label": "Alinhou com as pessoas impactadas quem ser\u00e1 seu substitutodurante o periodo de aus\u00eancia"
+  },
+  {
+   "fieldname": "substitute",
+   "fieldtype": "Data",
+   "label": "Substituto"
+  },
+  {
+   "default": "0",
+   "fieldname": "pending_task",
+   "fieldtype": "Check",
+   "label": "N\u00e3o ter\u00e1 nenhuma tarefa pendente durante o periodo de aus\u00eancia que pode impactar na produtividade e/ou continuidade de outros membros"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Upload de comprovantes"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Button",
+   "label": "Cadastrar"
+  },
+  {
+   "fieldname": "voltar",
+   "fieldtype": "Button",
+   "label": "Voltar"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cadastro de Dayoff",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-08-31 10:12:03.608993",
+ "modified_by": "Administrator",
+ "module": "Simba App",
+ "name": "Cadastro de Dayoff",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

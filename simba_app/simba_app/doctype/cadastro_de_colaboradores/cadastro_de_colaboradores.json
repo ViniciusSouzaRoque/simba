@@ -12,24 +12,23 @@
   "last_name",
   "full_name",
   "cpf",
-  "birth",
+  "birthday",
   "email",
   "password",
   "address_information_column",
-  "cep",
+  "zip",
   "street",
   "distric",
   "city",
-  "uf",
+  "state",
   "number",
   "general_information_column",
   "has_child",
-  "nome_dos_filhos",
-  "estado_civil",
+  "children_names",
+  "marital_state",
   "finish_column",
   "cadastrar",
-  "voltar",
-  "testando"
+  "voltar"
  ],
  "fields": [
   {
@@ -40,27 +39,6 @@
    "label": "CPF",
    "reqd": 1,
    "unique": 1
-  },
-  {
-   "fieldname": "cep",
-   "fieldtype": "Data",
-   "label": "CEP"
-  },
-  {
-   "fieldname": "uf",
-   "fieldtype": "Data",
-   "label": "UF"
-  },
-  {
-   "fieldname": "nome_dos_filhos",
-   "fieldtype": "Small Text",
-   "label": "Nome dos Filhos"
-  },
-  {
-   "fieldname": "estado_civil",
-   "fieldtype": "Select",
-   "label": "Estado Civil",
-   "options": "Solteiro\nCasado\nVi\u00favo\nDivorciado\nUni\u00e3o Est\u00e1vel"
   },
   {
    "fieldname": "cadastrar",
@@ -122,22 +100,11 @@
    "reqd": 1
   },
   {
-   "fieldname": "testando",
-   "fieldtype": "Button",
-   "label": "Testando"
-  },
-  {
    "fieldname": "password",
    "fieldtype": "Password",
    "in_list_view": 1,
    "label": "Senha",
    "options": "Password",
-   "reqd": 1
-  },
-  {
-   "fieldname": "birth",
-   "fieldtype": "Date",
-   "label": "Data de Nascimento",
    "reqd": 1
   },
   {
@@ -165,11 +132,38 @@
    "fieldname": "has_child",
    "fieldtype": "Check",
    "label": "Possui Filhos?"
+  },
+  {
+   "fieldname": "birthday",
+   "fieldtype": "Date",
+   "label": "Data de Nascimento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "zip",
+   "fieldtype": "Data",
+   "label": "CEP"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "UF"
+  },
+  {
+   "fieldname": "children_names",
+   "fieldtype": "Small Text",
+   "label": "Nome dos Filhos"
+  },
+  {
+   "fieldname": "marital_state",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "Solteiro\nCasado\nVi\u00favo\nDivorciado\nUni\u00e3o Est\u00e1vel"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 18:18:07.971461",
+ "modified": "2022-08-31 09:24:08.089879",
  "modified_by": "Administrator",
  "module": "Simba App",
  "name": "Cadastro de Colaboradores",

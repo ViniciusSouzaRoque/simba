@@ -3,6 +3,6 @@
 
 frappe.ui.form.on('Cadastro de Colaboradores', {
 	// refresh: function(frm) {
-
+		
 	// }
 });
